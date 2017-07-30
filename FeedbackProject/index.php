@@ -17,60 +17,73 @@ and open the template in the editor.
         <link rel="stylesheet" href="style.css" type="text/css">
         <title>Feedback Project</title>
     </head>
-    <body>
-        <form method="post" action="page1.php" class="form-group" >
-            <h3>To what extent is your guide available when you had queries/issues?</h3>
-            <input type="radio" name="q1" value="Always available">Always available<br>
-            <input type="radio" name="q1" value="Available most of the time">Available most of the time<br>
-            <input type="radio" name="q1" value="Sometimes available">Sometimes available<br>
-            <input type="radio" name="q1" value="Rarely available">Rarely available<br>
-            <input type="radio" name="q1" value="Not Available at all">Not Available at all<br>
+    <body style="background-color: whitesmoke;">
+        <h1>Facilities Available</h1><br><br>
+        <div class="container">
+            <form class="form-group formwidth" method="post" action="page2.php">
+            <h2>How do you rate the quality of the following facilities and services available in the campus?</h2><br><br>
+            <table class="table table-bordered table-hover">
+                <tbody>
+                    <tr>
+                        <th>Options</th>
+                        <th>Excellent</th>
+                        <th>Good</th>
+                        <th>Satisfactory</th>
+                        <th>Poor</th>
+                        <th>Not Applicable</th>
+                    </tr>
+                    <tr>
+                        <td>Leave</td>
+                        <td><input type="radio" name="leave" value="Excellent"></td>
+                        <td><input type="radio" name="leave" value="Good"></td>
+                        <td><input type="radio" name="leave" value="Satisfactory"></td>
+                        <td><input type="radio" name="leave" value="Poor"></td>
+                        <td><input type="radio" name="leave" value="Not Applicable"></td>
+                    </tr>
+                    <tr>
+                        <td>HealthCare</td>
+                        <td><input type="radio" name="healthcare" value="Excellent"></td>
+                        <td><input type="radio" name="healthcare" value="Good"></td>
+                        <td><input type="radio" name="healthcare" value="Satisfactory"></td>
+                        <td><input type="radio" name="healthcare" value="Poor"></td>
+                        <td><input type="radio" name="healthcare" value="Not Applicable"></td>
+                    </tr>
+                    <tr>
+                        <td>Infrastructure</td>
+                        <td><input type="radio" name="infrastructure" value="Excellent"></td>
+                        <td><input type="radio" name="infrastructure" value="Good"></td>
+                        <td><input type="radio" name="infrastructure" value="Satisfactory"></td>
+                        <td><input type="radio" name="infrastructure" value="Poor"></td>
+                        <td><input type="radio" name="infrastructure" value="Not Applicable"></td>
+                    </tr>
+                    <tr>
+                        <td>Resource<br>(Ex: Software,Equipments, Chemicals)</td>
+                        <td><input type="radio" name="resource" value="Excellent"></td>
+                        <td><input type="radio" name="resource" value="Good"></td>
+                        <td><input type="radio" name="resource" value="Satisfactory"></td>
+                        <td><input type="radio" name="resource" value="Poor"></td>
+                        <td><input type="radio" name="resource" value="Not Applicable"></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+            <h5>Have you applied for funds from the institute/department in the last 6 months?</h5>
+            <input type="radio" name="q5" value="Yes">Yes
+            <input type="radio" name="q5" value="No">No<br><br>
             
-            <h3>How useful is your guide's feedback?</h3>
-            <input type="radio" name="q2" value="Extremely useful">Extremely useful<br>
-            <input type="radio" name="q2" value="Very useful">Very useful<br>
-            <input type="radio" name="q2" value="Moderately useful">Moderately useful<br>
-            <input type="radio" name="q2" value="Rarely useful">Rarely useful<br>
-            <input type="radio" name="q2" value="Not useful at all">Not useful at all<br>
+            <h5>Have you initiated research grant submission in the last 6 months?</h5>
+            <input type="radio" name="q6" value="Yes">Yes
+            <input type="radio" name="q6" value="No">No<br><br>
             
-            <h3>To what extent does your guide review the paper/report and presentation on time?</h3>
-            <input type="radio" name="q3" value="Always on time">Always on time<br>
-            <input type="radio" name="q3" value="Mostly on time">Mostly on time<br>
-            <input type="radio" name="q3" value="Sometimes on time">Sometimes on time<br>
-            <input type="radio" name="q3" value="Rarely on time">Rarely on time<br>
-            <input type="radio" name="q3" value="Not at all">Not at all<br>
+            <h5>Have you availed facilities from the University to attend workshop/publish research work?</h5>
+            <input type="radio" name="q7" value="Yes">Yes
+            <input type="radio" name="q7" value="No">No<br><br>
             
-            <h3>To what extent has your guide encouraged you to interact with external experts? </h3>
-            <input type="radio" name="q4" value="Greatly encouraged">Greatly encouraged<br>
-            <input type="radio" name="q4" value="Encouraged">Encouraged<br>
-            <input type="radio" name="q4" value="Moderately encouraged">Moderately encouraged<br>
-            <input type="radio" name="q4" value="Rarely encouraged">Rarely encouraged<br>
-            <input type="radio" name="q4" value="Not at all">Not at all<br><br>
-            
-            <h3>How often do you receive feedback from your guide?</h3>
-            <select name="q5">
-                <option value="weekly">Weekly</option>
-                <option value="Once a Month">Once a Month</option>
-                <option value="Twice a Month">Twice a Month</option>
-                <option value="Once a Semester">Once a Semester</option>
-            </select><br><br>
-            
-            <h3>Do you feel your guide/co-guide is biased?</h3>
-            <input type="radio" name="q6" value="Yes">Yes<br>
-            <input type="radio" name="q6" value="No">No<br>
-            
-            <h3>Have you noticed any improvement in guidance from last feedback submitted?</h3>
-            <input type="radio" name="q7" value="Yes">Yes<br>
-            <input type="radio" name="q7" value="No">No<br>
-            
-            <h3>Would you recommend you guide to other candidates?(final years only)</h3>
-            <input type="radio" name="q8" value="Yes">Yes<br>
+            <h5>Have you initiated requests to procure new paid resources (ex: software, equipment, chemicals)?</h5>
+            <input type="radio" name="q8" value="Yes">Yes
             <input type="radio" name="q8" value="No">No<br><br>
             
             <button class="btn btn-primary">Submit</button>
-            
-            
-        </form>
-        
+            </form>
+        </div>
     </body>
 </html>
