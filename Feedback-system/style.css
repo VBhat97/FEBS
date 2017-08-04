@@ -1,0 +1,14 @@
+.des{
+    color: white;
+    background-color: #252F39;
+}
+
+li{
+    margin : 0;
+    padding: 0;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #5d6065;
+}
+
